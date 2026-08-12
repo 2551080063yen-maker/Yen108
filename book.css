@@ -1,0 +1,116 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+}
+.menu{
+background: linear-gradient(white  , blue , darkblue ) ;
+list-style: none;
+
+}
+.menu > li{
+    border-right: 1px solid darkblue;
+}
+.menu > li:last-child{
+    border-right:none;
+}
+.menu > li >a {
+display : block;
+padding: 1rem;
+color: white;
+text-decoration: none;
+
+}
+.h1{
+    text-align: center;
+    color:blue;
+}
+.menu > li >a:hover{
+    background-color:darkblue;
+}
+/*body*/
+.book {
+
+  
+    width: 20%;
+    padding:1px;
+  
+
+}
+.book img{
+
+    width: 100%;
+    transform: 1s;
+}
+.book img:hover{
+
+    transform: scale(1.2)
+}
+.book>div{
+
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 1.5rem;
+    overflow: hidden;
+
+}
+.close{
+    position:absolute;
+    top:1.5rem;
+    right: 1.1rem;
+    text-decoration:none;
+    color: red;
+    font-size: 50px;
+}
+.close:hover{
+
+    color:brown;
+}
+
+.menu>li>a:hover{
+ background-color: darkblue;
+}
+.submenu {
+    display:none;
+    position:absolute;
+    z-index: 99999;
+}
+.submenu ::after{
+
+    content: " ";
+    border-width: 15px;
+    border-color: transparent transparent white transparent;
+    border-style: solid;
+    position:absolute;
+    bottom:100%;
+    left :45%;
+}
+.sub:hover .submenu{
+    display : block;
+
+}
+
+/*footer*/
+footer{
+    background: linear-gradient(blue , white , darkblue);
+    padding : 2rem;
+    overflow : hidden;
+}
+footer>span {
+    animation : move 15s infinite;
+    position:relative;
+}
+@keyframes move{
+
+    from{
+        left:0;
+    }
+    to{
+        left:100%
+    }
+
+}
