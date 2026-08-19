@@ -1,0 +1,54 @@
+.modal
+{
+    background-color:rgba(0, 0, 255, 0.4);
+    position:fixed;
+    /*width:100vw;*/
+    /*height:100vh;*/
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    visibility:hidden;
+    transition: opacity .5s, visibility .5s;
+}
+.modal-show
+{
+    visibility: visible;
+    opacity:1;
+}
+.modal-hide
+{
+    visibility: hidden;
+    opacity:0;
+}
+.modal-content
+{
+    background-color: white;  
+    width:30%;  
+    border-radius:10px;
+    padding:1rem;
+    position:relative;
+}
+.input-control
+{
+    width:100%;
+    padding:2px;
+    height:2rem;
+}
+.control
+{
+    margin:5px;
+}
+.btn-control
+{
+    text-align:right;
+}
+.modal-close
+{
+    position:absolute;
+    right:1rem;
+    top:10px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.5rem;
+}

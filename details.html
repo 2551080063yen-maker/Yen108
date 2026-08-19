@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHI TIET SACH</title>
-    <link href="css/book.css" rel="stylesheet"/>
+    <link href="book.css" rel="stylesheet"/>
     <link href="details.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet"/>
     <link href="images/logo.png" rel="shortcut icon"/>
     <link href="forum.html" rel="stylesheet"/>
+    <script src="details.js" defer></script>
 
 </head>
 <body>
@@ -26,14 +27,24 @@
                      </ul>   
                 </li>
                 <li><a href="#"><i class="fa-solid fa-message"></i> Dien dan </a></li>
-                <link href="forum.html" rel="stylesheet"/>
+                <li>
+                    <button class="btn btn-success"><i class="fa-solid fa-circle-user"></i>Dang ky</button>
+                    <button class="btn btn-info"><i class="fa-solid fa-right-to-bracket"></i>Dang nhap</button>
+                </li>
             </ul>
         </nav>  
-        <h1 class="subject">Chi tiet sach</h1>
+        <h1 class="subject"> PHAT TRIEN NG DUNG DJANGO REST FRAMEWORK VA REACT</h1>
     </header>
-        <section class="book-detail">
+        <section class="container flex">
+
             <div class="col20">
-                <img src="images/3.jpg" alt="sach1"/>
+                <img src="images/3.jpg" alt="sach1" id="main-img"/>
+                <div class="thumbs flex">
+                    <div><img src="images/t01.png" alt="sach1"/></div>
+                    <div><img src="images/t02.png" alt="sach1"/></div>
+                    <div><img src="images/t02.png" alt="sach1"/></div>
+                    <div><img src="images/t04.png" alt="sach1"/></div>
+                </div>
             </div>
 
             <div class="col80">
@@ -93,19 +104,19 @@
 
         <section classs="review">
             <div class="review-form container">
-                <textarea placeholder="Noi dung binh luan"></textarea>
+                <textarea placeholder="Noi dung binh luan" id="comment-content"></textarea>
                 <div class="btn">
-                    <button class="add-comment"> <i class="fa-regular fa-comment"></i>Them binh luan</button>
+                    <button onclick="adComment(this)" class="btn btn-success"> <i class="fa-regular fa-comment"></i>Them binh luan</button>
                 </div>
             </div>
         </section>
         <section class="container">
             <ul class="comment-list">
+                ...
                 <li class="comment flex">
                     <div class="col10">
                         <img src="images/user.png" alt="user"/>
                     </div>
-
                     <div class="col90">
                         <h4>Sach nay phu hop voi beginner</h4>
                         <p>Cach day 4 gio.</p>

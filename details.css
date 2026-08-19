@@ -2,6 +2,10 @@
 {
     --my-padding: 1rem;
 }
+.subject
+{
+    text-align:center;
+}
 .book-detail{
     width:80%;
     margin: 0 auto;
@@ -84,4 +88,17 @@ table
     margin:5px;
     background-color:lightgrey;
     display:flex;
+}
+/* THUMBS */
+.thumbs>div
+{
+width:20%;
+}
+.thumbs img{
+    width:100%;
+}
+.thumbs img:hover
+{
+    transform: scale(1,1);
+    cursor:pointer;;
 }

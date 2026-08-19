@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DANH MUC SACH</title>
-    <link href="css/book.css" rel="stylesheet"/>
+    <link href="book.css" rel="stylesheet"/>
+    <link href="details.css" rel="stylesheet"/>
+    <link href="modal.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet"/>
     <link href="images/logo.png" rel="shortcut icon"/>
     <link href="forum.html" rel="stylesheet"/>
-
+    <script src="book.js" defer></script>
 </head>
 <body>
 
@@ -27,7 +29,10 @@
                          </ul>  
                 </li>
                 <li><a href="forum.html"target="_blank"><i class="fa-brands fa-stack-exchange"></i> Dien dan </a></li>
-                <link href="forum.html" rel="stylesheet"/>
+                <li>
+                    <button class="btn btn-success" onclick="openRegisterModal(this)" rel="registerModal"><i class="fa-solid fa-circle-user"></i>Dang ky</button>
+                    <button class="btn btn-info"><i class="fa-solid fa-right-to-bracket"></i>Dang nhap</button>
+                </li>
             </ul>
         </nav>
 
@@ -134,6 +139,39 @@
     </section>
 
     <footer> <span><b>OU WEBSITE &COPY; 2026</b></span>    </footer>
-    
+    <div class="modal flex h-center modal-hide" id="registerModal">
+        <div class="modal-content">
+            <a href="#" class="modal-close" onclick="closeModal(this)" rel="registerModal">&times;</a>
+            <div class="control">
+                <p>Ho ten</p>
+                <input type="text" placeholder="Ho ten" class="input-control"/>
+            </div>
+
+            <div class="control">
+            <p>Email</p>
+            <input type="email" placeholder="Email" class="input-control"/>
+            </div>
+
+            <div class="control">
+            <p>Ten dang nhap</p>
+            <input type="text" placeholder="Username" class="input-control"/>
+            </div>
+
+            <div class="control">
+            <p>Password</p>
+            <input type="password" placeholder="Password" class="input-control"/>
+            </div>
+
+            <div class="control">
+            <p>Xac nhan mat khau</p>
+            <input type="passsword" placeholder="Xac nhan password" class="input-control"/>
+            </div>
+
+            <div class="control btn-control">
+            <button class="btn btn-success">Dang ky</button>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>

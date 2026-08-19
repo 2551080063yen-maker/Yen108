@@ -5,6 +5,11 @@
 .flex{
     display:flex;
     flex-wrap: wrap;
+    align-items:center;
+}
+.h-center
+{
+    justify-content:center;
 }
 .menu{
 background: linear-gradient(white  , blue , darkblue ) ;
@@ -22,8 +27,12 @@ display : block;
 padding: 1rem;
 color: white;
 text-decoration: none;
-
 }
+.menu>li:last-child
+{
+    margin-left:auto;
+}
+
 .h1{
     text-align: center;
     color:blue;
@@ -113,4 +122,22 @@ footer>span {
         left:100%
     }
 
+}
+
+.btn
+{
+    padding:10px;
+    border:1px solid;
+    border-radius:5px;
+}
+.btn-success
+{
+    background-color:rgb(75, 168, 75);
+    color:white;
+    border-color:lightgreen;
+}
+.btn-info
+{
+    background-color:skyblue;
+    border-color:lightblue;
 }
